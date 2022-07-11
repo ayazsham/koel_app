@@ -15,6 +15,7 @@ import static io.restassured.RestAssured.given;
 public class PlaylistManagementTest {
     private int playlistId;
     private String token;
+
     @BeforeClass
     public void beforeAll(){
         token = "Bearer "+TokenHelper.get();

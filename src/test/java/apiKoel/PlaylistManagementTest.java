@@ -29,6 +29,7 @@ public class PlaylistManagementTest {
                 .when()
                 .delete();
     }
+
     @Test
     public void createPlaylist_PlaylistCreated(){
         Playlist createPlaylist = TestDataGenerator.createPlaylistRequest();

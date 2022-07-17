@@ -4,6 +4,7 @@ import enums.BrowserType;
 import helper.BrowserFabric;
 import helper.GetScreenShot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -26,8 +27,18 @@ public class BaseTest {
 //        } else {
 //            browserType=BrowserType.FIREFOX;
 //        }
-        BrowserType browserType = browser.equals("Chrome") ? BrowserType.CHROME : BrowserType.FIREFOX;
-        driver = BrowserFabric.getDriver(browserType);
+//        BrowserType browserType = browser.equals("Chrome") ? BrowserType.CHROME : BrowserType.FIREFOX;
+//        driver = BrowserFabric.getDriver(browserType);
+
+        //will run in chrome browser
+        System.setProperty("webdriver.chrome.driver","chromedriver");
+        driver = new ChromeDriver();
+
+        //headless run
+//        driver = BrowserFabric.getDriver(BrowserType.CHROME);
+//        driver.get("https://nwr-qa-env.web.app/");
+
+
     }
     @AfterMethod
     public void tearDown(ITestResult iTestResult) throws InterruptedException {

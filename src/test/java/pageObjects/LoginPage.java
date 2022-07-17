@@ -22,7 +22,7 @@ public class LoginPage extends BasePage{
     }
 
     public void open() {
-        driver.get("https://koelapp.testpro.io");
+        driver.get("https://bbb.testpro.io/");
     }
 
     public MainPage logIn(String email, String password) {

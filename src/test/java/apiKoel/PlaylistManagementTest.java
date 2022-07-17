@@ -50,6 +50,7 @@ public class PlaylistManagementTest {
         Assert.assertEquals(createPlaylist.getName(),responsePlaylist.getName());
         playlistId=responsePlaylist.getId();
     }
+
     @Test
     public void purge_AllPlaylists(){
         var data = Data.get();

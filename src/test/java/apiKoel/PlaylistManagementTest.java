@@ -29,7 +29,6 @@ public class PlaylistManagementTest {
                 .when()
                 .delete();
     }
-
     @Test
     public void createPlaylist_PlaylistCreated(){
         Playlist createPlaylist = TestDataGenerator.createPlaylistRequest();
@@ -50,7 +49,6 @@ public class PlaylistManagementTest {
         Assert.assertEquals(createPlaylist.getName(),responsePlaylist.getName());
         playlistId=responsePlaylist.getId();
     }
-
     @Test
     public void purge_AllPlaylists(){
         var data = Data.get();

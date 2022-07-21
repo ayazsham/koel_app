@@ -31,12 +31,12 @@ public class BaseTest {
 //        driver = BrowserFabric.getDriver(browserType);
 
         //will run in chrome browser
-        System.setProperty("webdriver.chrome.driver","chromedriver");
-        driver = new ChromeDriver();
+//        System.setProperty("webdriver.chrome.driver","chromedriver");
+//        driver = new ChromeDriver();
 
         //headless run
-//        driver = BrowserFabric.getDriver(BrowserType.CHROME);
-//        driver.get("https://nwr-qa-env.web.app/");
+        driver = BrowserFabric.getDriver(BrowserType.CHROME);
+        driver.get("https://nwr-qa-env.web.app/");
 
 
     }

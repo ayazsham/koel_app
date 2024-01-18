@@ -7,6 +7,7 @@ import pageObjects.MainPage;
 
 public class LoginTest2 extends BaseTest {
     @Test
+    //test
     public void loginTestx(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();

@@ -14,7 +14,7 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(mainPage.isLogoutButton());
     }
     @Test(enabled=false)
-    // TODO Update test later
+    // TODO Update test later if possible
     public void wrongLoginTest(){
         LoginPage loginPage = new LoginPage(driver);
         loginPage.open();

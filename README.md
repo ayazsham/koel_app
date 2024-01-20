@@ -1,6 +1,6 @@
 # KoelApp
 ### Selenium WebDriver, test automation framework
-The framework is built according to the Page Object Model (POM) design pattern. The POM is a concept that is used a lot to automate multiple page applications. Here we segregate the automation from our tests. This makes the framework more maintainable.
+The framework is built according to the Page Object Model (POM) design pattern. The POM is a concept that is used a lot to automate multiple-page applications. Here we segregate the automation from our tests. This makes the framework more maintainable.
 
 ## Getting started
 
